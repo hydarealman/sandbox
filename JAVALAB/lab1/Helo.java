@@ -1,4 +1,4 @@
-package JAVALAB;
+package JAVALAB.lab1;
 
 public class Helo {
   public static void main(String args[]) {

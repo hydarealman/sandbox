@@ -1,6 +1,6 @@
-package JAVALAB;
+package JAVALAB.lab1;
 
-import JAVALAB.ClassRoom.Teacher.Student;
+import JAVALAB.lab1.ClassRoom.Teacher.Student;
 
 public class ClassRoom {
     public static void main(String args[]) {
