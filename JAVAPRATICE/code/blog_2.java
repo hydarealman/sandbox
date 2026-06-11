@@ -1,23 +1,30 @@
 package code;
 
-import java.lang.reflect.Method;
-
 /**
- * Java 反射机制 --- 运行时获取类的信息、调用方法
- * 反射就是让程序在运行是"照镜子 --- 看见自己的结构,并动态操作他"
+ * 形式化方法 --- 用断言 assert 描述"必须满足的条件"
+ * 推荐阅读《大象 --- Thinking in UML》
  */
+
+
+/*
+    形式化方法 = "把应该满足的条件" 用代码明明白白写出来
+    让程序在出错的第一时间暴毙并报信,而不是带着错误继续跑下去,最后留下
+    一个找不到原因的Bug
+*/
+
+// assert 布尔表达式 : 报错信息;
 public class blog_2 {
-    public static void main(String[] args) throws Exception {
-        // 1. 拿到 String 类的 Class 对象（反射的入口）
-        Class<?> cls = Class.forName("java.lang.String");
 
-        // 2. 打印类名
-        System.out.println("类名: " + cls.getName());
+    static int divide(int a, int b) {
+        assert b != 0 : "前置条件：除数不能为0";    // 调用前必须满足
+        int r = a / b;
+        assert r * b == a : "后置条件：结果能还原";  // 调用后一定满足
+        return r;
+    }
 
-        // 3. 拿到 length() 方法，然后调用它
-        Method m = cls.getMethod("length");          // 获取方法
-        String s = "hello java";
-        int len = (int) m.invoke(s);                 // 调用 s.length()
-        System.out.println("字符串 \"" + s + "\" 的长度: " + len);
+    public static void main(String[] args) {
+        System.out.println("10 / 2 = " + divide(10, 2));
+
+        System.out.println("10 / 0 = " + divide(10, 0));  // 触发断言
     }
 }

@@ -3,7 +3,7 @@ package code;
 /**
  * 匿名内部类 --- 计算一个方法执行了多少秒
  */
-public class blog_1 {
+public class blog_1_1 {
     public static void main(String[] args) {
 
         // 匿名内部类：new 接口名() { 实现方法 }
