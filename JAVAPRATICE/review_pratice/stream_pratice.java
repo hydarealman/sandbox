@@ -2,7 +2,7 @@ package review_pratice;
 
 import java.io.*;
 
-public class streaam_pratice {
+public class stream_pratice {
     public static void main(String[] args) {
         String filePath = "d:/sandbox/JAVAPRATICE/data.bin";
 
