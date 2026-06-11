@@ -12,7 +12,7 @@ import java.io.*;
  */
 public class blog_4 {
 
-    public static void main(String[] args) {
+    public static void main(String[] arg8s) {
 
         // ==================== 1. 文本文件复制 ====================
         // 核心：FileReader 按"字符"读文本，FileWriter 按"字符"写文本
