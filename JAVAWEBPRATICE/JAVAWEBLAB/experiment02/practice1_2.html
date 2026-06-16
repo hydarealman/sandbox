@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>页面布局 - DIV+CSS</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            margin: 0px auto;
+            height: auto;
+            width: 800px;
+            border: 1px solid #006633;
+        }
+        #header {
+            height: 100px;
+            width: 800px;
+            background-image: url(plane.jpg);
+            background-repeat: no-repeat;
+            margin: 0px 0px 3px 0px;
+            background-color: #e0f0ff;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #header h2 {
+            color: #003366;
+            text-shadow: 1px 1px 2px white;
+            font-size: 24px;
+        }
+        #navigator {
+            height: 25px;
+            width: 800px;
+            font-size: 14px;
+            list-style-type: none;
+        }
+        #navigator li {
+            float: left;
+        }
+        #navigator li a {
+            color: #000000;
+            text-decoration: none;
+            padding-top: 4px;
+            display: block;
+            width: 131px;
+            height: 22px;
+            text-align: center;
+            background-color: #009966;
+            margin-left: 2px;
+        }
+        #navigator li a:hover {
+            background-color: #006633;
+            color: #FFFFFF;
+        }
+        #content {
+            height: auto;
+            width: 780px;
+            line-height: 1.5em;
+            padding: 10px;
+            clear: both;
+        }
+        #content p {
+            text-indent: 2em;
+        }
+        #content h3 {
+            font-size: 16px;
+            margin: 10px;
+        }
+        #footer {
+            height: 50px;
+            width: 780px;
+            line-height: 2em;
+            text-align: center;
+            background-color: #009966;
+            padding: 10px;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h2>欢迎来到我的网站</h2>
+    </div>
+    <div id="navigator">
+        <ul id="navigator">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">文章</a></li>
+            <li><a href="#">相册</a></li>
+            <li><a href="#">音乐</a></li>
+            <li><a href="#">视频</a></li>
+            <li><a href="#">关于</a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <h3>DIV+CSS 页面布局示例</h3>
+        <p>这是一个使用DIV+CSS进行页面布局的示例页面。页面结构包括四个主要部分：页头（header）、导航栏（navigator）、内容区域（content）和页脚（footer）。</p>
+        <p>通过CSS样式定义，我们可以灵活地控制各个区域的显示效果，包括背景颜色、字体大小、边距、内边距等属性。这种布局方式具有良好的可维护性和扩展性。</p>
+        <h3>CSS核心概念</h3>
+        <p>CSS（层叠样式表）用于控制网页的外观和布局。通过DIV+CSS的组合，可以实现各种复杂的页面布局效果。DIV用于定义文档结构，CSS用于控制样式表现，从而实现结构与表现的分离。</p>
+        <h3>布局优势</h3>
+        <p>相比传统的表格布局方式，DIV+CSS布局具有诸多优势：代码更简洁、加载速度更快、搜索引擎更友好、维护更方便等。这也是现代Web开发中推荐使用的布局方式。</p>
+    </div>
+    <div id="footer">
+        <p>版权所有 &copy; 2024 JavaWeb实验 | 联系方式：example@example.com</p>
+    </div>
+</body>
+</html>

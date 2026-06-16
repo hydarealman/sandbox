@@ -1,0 +1,57 @@
+16-Jun-2026 15:15:23.068 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/11.0.22
+16-Jun-2026 15:15:23.070 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        May 1 2026 18:29:05 UTC
+16-Jun-2026 15:15:23.071 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      11.0.22.0
+16-Jun-2026 15:15:23.071 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 11
+16-Jun-2026 15:15:23.071 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+16-Jun-2026 15:15:23.071 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+16-Jun-2026 15:15:23.071 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     C:\Program Files\Eclipse Adoptium\jdk-25.0.2.10-hotspot
+16-Jun-2026 15:15:23.071 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    25.0.2+10-LTS
+16-Jun-2026 15:15:23.071 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Eclipse Adoptium
+16-Jun-2026 15:15:23.071 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     D:\sandbox\JAVAWEBPRATICE\JAVAWEBLAB\apache-tomcat
+16-Jun-2026 15:15:23.071 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     D:\sandbox\JAVAWEBPRATICE\JAVAWEBLAB\apache-tomcat
+16-Jun-2026 15:15:23.081 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=D:/sandbox/JAVAWEBPRATICE/JAVAWEBLAB/apache-tomcat/conf/logging.properties
+16-Jun-2026 15:15:23.081 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+16-Jun-2026 15:15:23.081 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djdk.tls.ephemeralDHKeySize=2048
+16-Jun-2026 15:15:23.081 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+16-Jun-2026 15:15:23.081 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.lang=ALL-UNNAMED
+16-Jun-2026 15:15:23.082 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+16-Jun-2026 15:15:23.082 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.io=ALL-UNNAMED
+16-Jun-2026 15:15:23.082 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util=ALL-UNNAMED
+16-Jun-2026 15:15:23.082 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+16-Jun-2026 15:15:23.082 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+16-Jun-2026 15:15:23.082 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --enable-native-access=ALL-UNNAMED
+16-Jun-2026 15:15:23.082 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=D:/sandbox/JAVAWEBPRATICE/JAVAWEBLAB/apache-tomcat
+16-Jun-2026 15:15:23.082 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=D:/sandbox/JAVAWEBPRATICE/JAVAWEBLAB/apache-tomcat
+16-Jun-2026 15:15:23.082 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=D:/sandbox/JAVAWEBPRATICE/JAVAWEBLAB/apache-tomcat/temp
+16-Jun-2026 15:15:23.111 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.6]加载了基于APR的Apache Tomcat本机库[2.0.14]。
+16-Jun-2026 15:15:23.117 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 3.5.5 27 Jan 2026]
+16-Jun-2026 15:15:23.275 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8088"]
+16-Jun-2026 15:15:23.290 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[353]毫秒内初始化
+16-Jun-2026 15:15:23.316 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+16-Jun-2026 15:15:23.316 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/11.0.22]
+16-Jun-2026 15:15:23.320 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\sandbox\JAVAWEBPRATICE\JAVAWEBLAB\apache-tomcat\webapps\docs]
+16-Jun-2026 15:15:23.490 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\sandbox\JAVAWEBPRATICE\JAVAWEBLAB\apache-tomcat\webapps\docs]的部署已在[165]毫秒内完成
+16-Jun-2026 15:15:23.490 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\sandbox\JAVAWEBPRATICE\JAVAWEBLAB\apache-tomcat\webapps\examples]
+16-Jun-2026 15:15:24.290 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\sandbox\JAVAWEBPRATICE\JAVAWEBLAB\apache-tomcat\webapps\examples]的部署已在[800]毫秒内完成
+16-Jun-2026 15:15:24.290 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\sandbox\JAVAWEBPRATICE\JAVAWEBLAB\apache-tomcat\webapps\experiment04]
+16-Jun-2026 15:15:24.309 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\sandbox\JAVAWEBPRATICE\JAVAWEBLAB\apache-tomcat\webapps\experiment04]的部署已在[19]毫秒内完成
+16-Jun-2026 15:15:24.309 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\sandbox\JAVAWEBPRATICE\JAVAWEBLAB\apache-tomcat\webapps\experiment05]
+16-Jun-2026 15:15:24.321 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\sandbox\JAVAWEBPRATICE\JAVAWEBLAB\apache-tomcat\webapps\experiment05]的部署已在[12]毫秒内完成
+16-Jun-2026 15:15:24.321 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\sandbox\JAVAWEBPRATICE\JAVAWEBLAB\apache-tomcat\webapps\experiment06]
+16-Jun-2026 15:15:24.333 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\sandbox\JAVAWEBPRATICE\JAVAWEBLAB\apache-tomcat\webapps\experiment06]的部署已在[12]毫秒内完成
+16-Jun-2026 15:15:24.333 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\sandbox\JAVAWEBPRATICE\JAVAWEBLAB\apache-tomcat\webapps\experiment07]
+16-Jun-2026 15:15:24.344 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\sandbox\JAVAWEBPRATICE\JAVAWEBLAB\apache-tomcat\webapps\experiment07]的部署已在[11]毫秒内完成
+16-Jun-2026 15:15:24.344 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\sandbox\JAVAWEBPRATICE\JAVAWEBLAB\apache-tomcat\webapps\experiment08]
+16-Jun-2026 15:15:24.359 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\sandbox\JAVAWEBPRATICE\JAVAWEBLAB\apache-tomcat\webapps\experiment08]的部署已在[15]毫秒内完成
+16-Jun-2026 15:15:24.359 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\sandbox\JAVAWEBPRATICE\JAVAWEBLAB\apache-tomcat\webapps\experiment09]
+16-Jun-2026 15:15:24.372 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\sandbox\JAVAWEBPRATICE\JAVAWEBLAB\apache-tomcat\webapps\experiment09]的部署已在[13]毫秒内完成
+16-Jun-2026 15:15:24.372 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\sandbox\JAVAWEBPRATICE\JAVAWEBLAB\apache-tomcat\webapps\experiment10]
+16-Jun-2026 15:15:24.384 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\sandbox\JAVAWEBPRATICE\JAVAWEBLAB\apache-tomcat\webapps\experiment10]的部署已在[12]毫秒内完成
+16-Jun-2026 15:15:24.384 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\sandbox\JAVAWEBPRATICE\JAVAWEBLAB\apache-tomcat\webapps\host-manager]
+16-Jun-2026 15:15:24.399 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\sandbox\JAVAWEBPRATICE\JAVAWEBLAB\apache-tomcat\webapps\host-manager]的部署已在[15]毫秒内完成
+16-Jun-2026 15:15:24.399 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\sandbox\JAVAWEBPRATICE\JAVAWEBLAB\apache-tomcat\webapps\manager]
+16-Jun-2026 15:15:24.412 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\sandbox\JAVAWEBPRATICE\JAVAWEBLAB\apache-tomcat\webapps\manager]的部署已在[13]毫秒内完成
+16-Jun-2026 15:15:24.412 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\sandbox\JAVAWEBPRATICE\JAVAWEBLAB\apache-tomcat\webapps\ROOT]
+16-Jun-2026 15:15:24.421 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\sandbox\JAVAWEBPRATICE\JAVAWEBLAB\apache-tomcat\webapps\ROOT]的部署已在[9]毫秒内完成
+16-Jun-2026 15:15:24.423 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8088"]
+16-Jun-2026 15:15:24.439 信息 [main] org.apache.catalina.startup.Catalina.start [1146]毫秒后服务器启动

@@ -1,0 +1,14 @@
+0:0:0:0:0:0:0:1 - - [16/Jun/2026:15:15:25 +0800] "GET / HTTP/1.1" 200 11435
+0:0:0:0:0:0:0:1 - - [16/Jun/2026:15:15:28 +0800] "GET / HTTP/1.1" 200 11435
+0:0:0:0:0:0:0:1 - - [16/Jun/2026:15:16:04 +0800] "GET /experiment04/ HTTP/1.1" 200 3282
+0:0:0:0:0:0:0:1 - - [16/Jun/2026:15:16:04 +0800] "GET /experiment05/input.jsp HTTP/1.1" 200 3286
+0:0:0:0:0:0:0:1 - - [16/Jun/2026:15:16:04 +0800] "GET /experiment06/ HTTP/1.1" 200 4146
+0:0:0:0:0:0:0:1 - - [16/Jun/2026:15:16:04 +0800] "GET /experiment07/inputTriangle.jsp HTTP/1.1" 200 1618
+0:0:0:0:0:0:0:1 - - [16/Jun/2026:15:16:04 +0800] "GET /experiment08/login_1.jsp HTTP/1.1" 200 1762
+0:0:0:0:0:0:0:1 - - [16/Jun/2026:15:16:04 +0800] "GET /experiment09/inputNumber.jsp HTTP/1.1" 200 2373
+0:0:0:0:0:0:0:1 - - [16/Jun/2026:15:16:05 +0800] "GET /experiment10/login.jsp HTTP/1.1" 200 1962
+0:0:0:0:0:0:0:1 - - [16/Jun/2026:15:16:39 +0800] "GET /experiment04/index.jsp HTTP/1.1" 200 3282
+0:0:0:0:0:0:0:1 - - [16/Jun/2026:15:17:10 +0800] "POST /experiment08/loginServlet_1 HTTP/1.1" 200 1587
+0:0:0:0:0:0:0:1 - - [16/Jun/2026:15:17:10 +0800] "POST /experiment09/handleComputer HTTP/1.1" 200 1483
+0:0:0:0:0:0:0:1 - - [16/Jun/2026:15:17:10 +0800] "POST /experiment10/login HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [16/Jun/2026:15:17:10 +0800] "POST /experiment07/showTriangle.jsp HTTP/1.1" 500 2986

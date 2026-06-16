@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>调查问卷</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px auto;
+            width: 600px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 8px;
+        }
+        td:first-child {
+            text-align: right;
+            width: 30%;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="password"], textarea, select {
+            width: 95%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .radio-group, .checkbox-group {
+            display: inline-block;
+            margin-right: 15px;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 15px;
+        }
+        input[type="submit"], input[type="reset"] {
+            padding: 8px 25px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+        }
+        input[type="reset"] {
+            background-color: #f44336;
+            color: white;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        input[type="reset"]:hover {
+            background-color: #da190b;
+        }
+    </style>
+</head>
+<body>
+    <h1>调查问卷</h1>
+    <form action="practice1_1.html" method="post" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td>姓名：</td>
+                <td><input type="text" name="username" placeholder="请输入您的姓名"></td>
+            </tr>
+            <tr>
+                <td>密码：</td>
+                <td><input type="password" name="password" placeholder="请输入密码"></td>
+            </tr>
+            <tr>
+                <td>性别：</td>
+                <td>
+                    <span class="radio-group">
+                        <input type="radio" name="gender" value="male" checked> 男
+                    </span>
+                    <span class="radio-group">
+                        <input type="radio" name="gender" value="female"> 女
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>年龄：</td>
+                <td>
+                    <select name="age">
+                        <option value="">请选择</option>
+                        <option value="18-25">18-25岁</option>
+                        <option value="26-35">26-35岁</option>
+                        <option value="36-45">36-45岁</option>
+                        <option value="46-55">46-55岁</option>
+                        <option value="55+">55岁以上</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>兴趣爱好：</td>
+                <td>
+                    <span class="checkbox-group">
+                        <input type="checkbox" name="hobby" value="reading"> 阅读
+                    </span>
+                    <span class="checkbox-group">
+                        <input type="checkbox" name="hobby" value="sports"> 运动
+                    </span>
+                    <span class="checkbox-group">
+                        <input type="checkbox" name="hobby" value="music"> 音乐
+                    </span>
+                    <span class="checkbox-group">
+                        <input type="checkbox" name="hobby" value="travel"> 旅游
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>学历：</td>
+                <td>
+                    <select name="education">
+                        <option value="">请选择</option>
+                        <option value="highschool">高中</option>
+                        <option value="college">大专</option>
+                        <option value="bachelor">本科</option>
+                        <option value="master">硕士</option>
+                        <option value="phd">博士</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>自我介绍：</td>
+                <td><textarea name="intro" rows="4" placeholder="请简单介绍自己..."></textarea></td>
+            </tr>
+        </table>
+        <div class="buttons">
+            <input type="submit" value="提交">
+            <input type="reset" value="重置">
+        </div>
+    </form>
+</body>
+</html>

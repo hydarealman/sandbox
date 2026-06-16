@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册页面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px auto;
+            width: 650px;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        table { width: 100%; border-collapse: collapse; }
+        td { padding: 6px; }
+        td:first-child {
+            text-align: right;
+            width: 28%;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+        input[type="text"], input[type="password"] {
+            width: 90%;
+            padding: 6px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .hint {
+            font-size: 11px;
+            color: #888;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        input[type="submit"], input[type="reset"] {
+            padding: 10px 30px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+        }
+        input[type="reset"] {
+            background-color: #999;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>用户注册</h1>
+    <form name="registerForm" action="#" method="post" onsubmit="return validateForm()">
+        <table>
+            <tr>
+                <td>登录账号：</td>
+                <td>
+                    <input type="text" id="account" name="account" placeholder="以字母开头，只能包含字母或数字">
+                    <span class="hint">以字母开头，只能包含字母或数字</span>
+                </td>
+            </tr>
+            <tr>
+                <td>密码：</td>
+                <td>
+                    <input type="password" id="password" name="password" placeholder="8位以上，含字母、数字和特殊字符">
+                    <span class="hint">8位以上，需含字母、数字和特殊字符</span>
+                </td>
+            </tr>
+            <tr>
+                <td>确认密码：</td>
+                <td>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="请再次输入密码">
+                </td>
+            </tr>
+            <tr>
+                <td>姓名：</td>
+                <td><input type="text" id="fullname" name="fullname" placeholder="请输入您的姓名"></td>
+            </tr>
+            <tr>
+                <td>身份证号码：</td>
+                <td>
+                    <input type="text" id="idCard" name="idCard" placeholder="请输入18位身份证号码">
+                    <span class="hint">只考虑18位身份证</span>
+                </td>
+            </tr>
+            <tr>
+                <td>出生年月日：</td>
+                <td>
+                    <input type="text" id="birthday" name="birthday" placeholder="yyyy-mm-dd格式">
+                    <span class="hint">格式：yyyy-mm-dd</span>
+                </td>
+            </tr>
+            <tr>
+                <td>住址：</td>
+                <td><input type="text" id="address" name="address" placeholder="请输入您的住址"></td>
+            </tr>
+            <tr>
+                <td>邮编：</td>
+                <td>
+                    <input type="text" id="zipcode" name="zipcode" placeholder="6位数字">
+                    <span class="hint">6位数字</span>
+                </td>
+            </tr>
+            <tr>
+                <td>E-mail：</td>
+                <td>
+                    <input type="text" id="email" name="email" placeholder="请输入邮箱地址">
+                    <span class="hint">如：example@mail.com</span>
+                </td>
+            </tr>
+        </table>
+        <div class="buttons">
+            <input type="submit" value="提交注册">
+            <input type="reset" value="重新填写">
+        </div>
+    </form>
+
+    <script type="text/javascript">
+        function validateForm() {
+            // 1. 登录账号验证：只能是字母或数字且以字母开头
+            var account = document.getElementById("account").value.trim();
+            var accountRegex = /^[a-zA-Z][a-zA-Z0-9]*$/;
+            if (account === "") {
+                alert("登录账号不能为空！");
+                document.getElementById("account").focus();
+                return false;
+            }
+            if (!accountRegex.test(account)) {
+                alert("登录账号只能以字母开头，且只能包含字母或数字！");
+                document.getElementById("account").focus();
+                return false;
+            }
+
+            // 2. 密码验证：8位以上，需要有字母和数字之外的字符
+            var password = document.getElementById("password").value;
+            if (password.length < 8) {
+                alert("密码需要在8位以上！");
+                document.getElementById("password").focus();
+                return false;
+            }
+            var hasLetter = /[a-zA-Z]/.test(password);
+            var hasDigit = /[0-9]/.test(password);
+            var hasSpecial = /[^a-zA-Z0-9]/.test(password);
+            if (!hasLetter || !hasDigit || !hasSpecial) {
+                alert("密码需要包含字母、数字和特殊字符！");
+                document.getElementById("password").focus();
+                return false;
+            }
+
+            // 3. 确认密码验证
+            var confirmPassword = document.getElementById("confirmPassword").value;
+            if (confirmPassword !== password) {
+                alert("两次输入的密码不一致！");
+                document.getElementById("confirmPassword").focus();
+                return false;
+            }
+
+            // 4. 姓名验证
+            var fullname = document.getElementById("fullname").value.trim();
+            if (fullname === "") {
+                alert("姓名不能为空！");
+                document.getElementById("fullname").focus();
+                return false;
+            }
+
+            // 5. 身份证验证（18位）
+            var idCard = document.getElementById("idCard").value.trim();
+            var idCardRegex = /^[0-9]{17}[0-9Xx]$/;
+            if (!idCardRegex.test(idCard)) {
+                alert("身份证号码必须是18位数字（最后一位可以是X）！");
+                document.getElementById("idCard").focus();
+                return false;
+            }
+
+            // 6. 出生年月日验证：yyyy-mm-dd格式，并与身份证号码校验
+            var birthday = document.getElementById("birthday").value.trim();
+            var birthdayRegex = /^(\d{4})-(\d{2})-(\d{2})$/;
+            var match = birthday.match(birthdayRegex);
+            if (!match) {
+                alert("出生年月日格式必须为yyyy-mm-dd！");
+                document.getElementById("birthday").focus();
+                return false;
+            }
+            var year = parseInt(match[1], 10);
+            var month = parseInt(match[2], 10);
+            var day = parseInt(match[3], 10);
+            if (month < 1 || month > 12) {
+                alert("出生年月日中的月份必须在01-12之间！");
+                document.getElementById("birthday").focus();
+                return false;
+            }
+            var daysInMonth = [31, (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0) ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+            if (day < 1 || day > daysInMonth[month - 1]) {
+                alert("出生年月日中的日期不合法！");
+                document.getElementById("birthday").focus();
+                return false;
+            }
+
+            // 校验身份证中的出生日期与输入的出生年月日是否一致
+            var idBirthday = idCard.substring(6, 14);
+            var expectedBirthday = match[1] + match[2] + match[3];
+            if (idBirthday !== expectedBirthday) {
+                alert("身份证号码中的出生日期(" + idBirthday + ")与输入的出生年月日(" + expectedBirthday + ")不一致！");
+                document.getElementById("idCard").focus();
+                return false;
+            }
+
+            // 7. 住址验证
+            var address = document.getElementById("address").value.trim();
+            if (address === "") {
+                alert("住址不能为空！");
+                document.getElementById("address").focus();
+                return false;
+            }
+
+            // 8. 邮编验证：6位数字
+            var zipcode = document.getElementById("zipcode").value.trim();
+            var zipcodeRegex = /^[0-9]{6}$/;
+            if (!zipcodeRegex.test(zipcode)) {
+                alert("邮编必须是6位数字！");
+                document.getElementById("zipcode").focus();
+                return false;
+            }
+
+            // 9. E-mail验证
+            var email = document.getElementById("email").value.trim();
+            var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!emailRegex.test(email)) {
+                alert("E-mail格式不正确！");
+                document.getElementById("email").focus();
+                return false;
+            }
+
+            alert("注册信息验证通过！\n欢迎您，" + fullname + "！");
+            return true;
+        }
+    </script>
+</body>
+</html>
