@@ -55,3 +55,59 @@
 16-Jun-2026 15:15:24.421 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\sandbox\JAVAWEBPRATICE\JAVAWEBLAB\apache-tomcat\webapps\ROOT]的部署已在[9]毫秒内完成
 16-Jun-2026 15:15:24.423 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8088"]
 16-Jun-2026 15:15:24.439 信息 [main] org.apache.catalina.startup.Catalina.start [1146]毫秒后服务器启动
+16-Jun-2026 15:32:14.156 警告 [http-nio-8088-exec-9] org.apache.coyote.http11.Http11Processor.writeHeaders HTTP响应头信息[Location] 值[login.jsp;jsessionid=D915BBA6C819D58250C90B27D1EB96B5?error=请先登录！]，由于无效已从响应中移除
+	java.lang.IllegalArgumentException: java.nio.charset.UnmappableCharacterException: Input length = 1
+		at org.apache.tomcat.util.buf.MessageBytes.toBytes(MessageBytes.java:291)
+		at org.apache.coyote.http11.Http11OutputBuffer.write(Http11OutputBuffer.java:389)
+		at org.apache.coyote.http11.Http11OutputBuffer.sendHeader(Http11OutputBuffer.java:368)
+		at org.apache.coyote.http11.Http11Processor.writeHeaders(Http11Processor.java:1065)
+		at org.apache.coyote.http11.Http11Processor.prepareResponse(Http11Processor.java:1052)
+		at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:376)
+		at org.apache.coyote.Response.action(Response.java:197)
+		at org.apache.coyote.Response.commit(Response.java:439)
+		at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:272)
+		at org.apache.catalina.connector.OutputBuffer.close(OutputBuffer.java:232)
+		at org.apache.catalina.connector.Response.finishResponse(Response.java:386)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:370)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+		at java.base/java.lang.Thread.run(Thread.java:1474)
+	Caused by: java.nio.charset.UnmappableCharacterException: Input length = 1
+		at java.base/java.nio.charset.CoderResult.throwException(CoderResult.java:280)
+		at java.base/java.nio.charset.CharsetEncoder.encode(CharsetEncoder.java:837)
+		at org.apache.tomcat.util.buf.MessageBytes.toBytes(MessageBytes.java:284)
+		... 20 more
+16-Jun-2026 15:32:16.205 警告 [http-nio-8088-exec-4] org.apache.coyote.http11.Http11Processor.writeHeaders HTTP响应头信息[Location] 值[login.jsp;jsessionid=B0A2117C29FD73EC016C748BB98D40A5?error=请先登录！]，由于无效已从响应中移除
+	java.lang.IllegalArgumentException: java.nio.charset.UnmappableCharacterException: Input length = 1
+		at org.apache.tomcat.util.buf.MessageBytes.toBytes(MessageBytes.java:291)
+		at org.apache.coyote.http11.Http11OutputBuffer.write(Http11OutputBuffer.java:389)
+		at org.apache.coyote.http11.Http11OutputBuffer.sendHeader(Http11OutputBuffer.java:368)
+		at org.apache.coyote.http11.Http11Processor.writeHeaders(Http11Processor.java:1065)
+		at org.apache.coyote.http11.Http11Processor.prepareResponse(Http11Processor.java:1052)
+		at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:376)
+		at org.apache.coyote.Response.action(Response.java:197)
+		at org.apache.coyote.Response.commit(Response.java:439)
+		at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:272)
+		at org.apache.catalina.connector.OutputBuffer.close(OutputBuffer.java:232)
+		at org.apache.catalina.connector.Response.finishResponse(Response.java:386)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:370)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+		at java.base/java.lang.Thread.run(Thread.java:1474)
+	Caused by: java.nio.charset.UnmappableCharacterException: Input length = 1
+		at java.base/java.nio.charset.CoderResult.throwException(CoderResult.java:280)
+		at java.base/java.nio.charset.CharsetEncoder.encode(CharsetEncoder.java:837)
+		at org.apache.tomcat.util.buf.MessageBytes.toBytes(MessageBytes.java:284)
+		... 20 more
