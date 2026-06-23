@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!-- 类型别名 -->
+    <typeAliases>
+        <!-- 方式1: 一个一个设置别名 -->
+        <!-- <typeAlias alias="UserVO" type="com.neu.vo.UserVO"/> -->
+
+        <!-- 方式2: 给指定包下的所有类设置别名，别名默认是类名首字母小写(如 userVO) -->
+        <package name="com.neu.vo"/>
+        <package name="com.neu.domain"/>
+    </typeAliases>
+
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/mybatis"/>
+                <property name="username" value="root"/>
+                <property name="password" value="123456"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!-- 方式1: 指定映射文件路径 -->
+    <mappers>
+        <mapper resource="./UserMapper.xml"/>
+    </mappers>
+
+    <!-- 方式2: class方式（代理方式专用，接口+同名XML放在同目录结构）
+    <mappers>
+        <mapper class="com.neu.mapper.UserMapper"/>
+    </mappers>
+    -->
+
+    <!-- 方式3: package批量扫描（代理方式专用）
+    <mappers>
+        <package name="com.neu.mapper"/>
+    </mappers>
+    -->
+
+</configuration>
