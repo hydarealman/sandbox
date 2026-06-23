@@ -1,6 +1,0 @@
-com\neu\vo\UserVO.class
-com\neu\mapper\UserMapper.class
-com\neu\_01typeAliase\TypeAliase.class
-com\neu\utils\SqlSessionUtil.class
-com\neu\_02proxyCRUD\CURDTest.class
-com\neu\domain\User.class
