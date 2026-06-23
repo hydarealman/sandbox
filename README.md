@@ -16,6 +16,7 @@
 | [JAVALAB/](JAVALAB/) | Java | 面向对象课程实验（lab1~lab5），含实验报告 | ~105 文件 |
 | [JAVAPRATICE/](JAVAPRATICE/) | Java | 博客作业 + 期末复习（多线程、IO流、正则、接口） | ~42 文件 |
 | [JAVAWEBPRATICE/](JAVAWEBPRATICE/) | Java, JSP, Servlet | Java Web 课程 10 次实验 + Tomcat | ~809 文件 |
+| [java-web-internship/](java-web-internship/) | Java, MyBatis, MySQL | Java Web 实习（MyBatis 持久层框架） | ~20 文件 |
 | [MYSQL_homework/](MYSQL_homework/) | SQL, Python | MySQL 数据库作业 + 实验报告 | ~77 文件 |
 | [python_first_learning/](python_first_learning/) | Python | Python 初学（OOP、数据分析、数据库、图表） | ~36 文件 |
 | [os_homework/](os_homework/) | C | 操作系统（IPC、信号量、生产者消费者、虚拟内存） | ~31 文件 |
@@ -97,6 +98,14 @@
 - 内嵌 **Apache Tomcat 11** 完整服务器，开箱即用
 - 含实验报告生成脚本（`extract_doc.py`、`generate_reports.py`）
 - `reports/` — 10 份 .docx 实验报告 + HTML 版本
+
+#### [java-web-internship/](java-web-internship/) — Java Web 实习（MyBatis）
+- **Day01** — MyBatis 入门：ORM、SqlSession 生命周期、CRUD、@Param 参数、动态代理原理
+- **Day02** — 代理方式 CRUD：typeAliases 别名配置、getMapper() 代理、三种映射文件指定方式
+- 数据库：MySQL（`t_user` 表 + `user` 表）
+- 构建工具：Maven（MyBatis 3.5.16 + MySQL Connector 8.0.33）
+- `code/day01/` — 4 个可运行程序（HelloWorld / CURDDemo1 / ParamTest / ProxyTest）
+- `code/day02/` — 2 个可运行程序（TypeAliase / CURDTest）
 
 ---
 

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+
+
+
+<configuration>
+
+    <typeAliases>
+
+
+        <!--一个一个类设置别名-->
+        <!--<typeAlias alias="UserVO" type="com.neu.vo.UserVO"/>-->
+
+        <package name="com.neu.vo"/>
+        <package name="com.neu.domain"/>
+    </typeAliases>
+
+
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/mybatis"/>
+                <property name="username" value="root"/>
+                <property name="password" value="root"/>
+            </dataSource>
+        </environment>
+
+    </environments>
+
+
+
+
+    <mappers>
+        <!--指定映射文件的路径-->
+        <mapper resource="./UserMapper.xml"/>
+    </mappers>
+</configuration>
